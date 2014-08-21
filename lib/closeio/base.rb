@@ -3,7 +3,7 @@ module Closeio
 
     include HTTParty
     base_uri   'https://app.close.io/api/v1'
-    basic_auth ENV['CLOSEIO_API_KEY'], ''
+    basic_auth CONFIG['close_io_key'], ''
     headers 'Content-Type' => 'application/json'
     #debug_output $stdout
     format :json
